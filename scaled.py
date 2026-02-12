@@ -28,3 +28,6 @@ num_cols = df.select_dtypes(include="number").columns
 df[num_cols] = scaler.fit_transform(df[num_cols])
 
 print(df.head())
+
+# Now store it in 
+df.to_pickle("cleaned_scaled.pkl")
